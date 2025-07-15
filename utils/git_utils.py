@@ -24,14 +24,17 @@ def get_changed_files(repo_path):
     
     # Get both staged and untracked files
     changed_files = [item.a_path for item in repo.index.diff(None)] + repo.untracked_files
-
-    # Filter: Only .py files directly inside the tests/ folder, starting with test_
+    # Filter for Vue component files in the specific directory
     filtered_files = [
         f for f in changed_files
-        if f.startswith("vue_front_end_code/login-widget/src/")
-        and f.count("/") == 1  # Ensures it's directly under tests/, not nested like tests/unit/test_abc.py
+        if f.startswith("vue_front_end_code")
+         # Ensures it's directly under tests/, not nested like tests/unit/test_abc.py
         
         and f.endswith(".vue")
+        and f.startswith("vue_front_end_code/login-widget/src/components/")
+        # and not f.startswith("vue_front_end_code/tests/unit/")
+        # and not f.startswith("vue_front_end_code/login-widget/saved_logs/")
+        
     ]
 
     return filtered_files

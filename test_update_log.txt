@@ -12375,3 +12375,3923 @@ tests\my_testing_code_test_cases.py ....                                 [100%]
 
 
 ============================================================
+
+============================================================
+Test Generation Log - 2025-06-18 17:11:52
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm_test_cases.py
+Test File Path: ./tests\vue_front_end_code_login-widget_src_components_LoginForm_test_cases.py
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+import pytest
+from scr.base_module import function_name
+
+def test_function_name(happy_path_input):
+    result = function_name(happy_path_input)
+    assert result == expected_result
+
+def test_function_name_invalid_input():
+    with pytest.raises(ValueError):
+        function_name(bad_input)
+
+def test_function_name_boundary_test():
+    result = function_name(edge_case_input)
+    assert result == expected_result
+
+Test Execution Results:
+------------------------------
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-8.4.0, pluggy-1.6.0
+rootdir: E:\work_dsi\AI_Test_Automation_tool
+plugins: anyio-4.9.0
+collected 0 items / 1 error
+
+=================================== ERRORS ====================================
+_ ERROR collecting tests/vue_front_end_code_login-widget_src_components_LoginForm_test_cases.py _
+ImportError while importing test module 'E:\work_dsi\AI_Test_Automation_tool\tests\vue_front_end_code_login-widget_src_components_LoginForm_test_cases.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\NSH43\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\vue_front_end_code_login-widget_src_components_LoginForm_test_cases.py:2: in <module>
+    from scr.base_module import function_name
+E   ModuleNotFoundError: No module named 'scr.base_module'
+=========================== short test summary info ===========================
+ERROR tests/vue_front_end_code_login-widget_src_components_LoginForm_test_cases.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+============================== 1 error in 0.09s ===============================
+
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-19 11:58:32
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm_test_cases.py
+Test File Path: ./tests\vue_front_end_code_login-widget_src_components_LoginForm_test_cases.py
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+import pytest
+from scr.LoginForm import LoginForm
+
+def test_login_form_button_style_happy_path():
+    form = LoginForm()
+    assert form.button_style == 'background-color: #42b983; color: white; border: none; border-radius: 6px;'
+
+def test_login_form_button_style_invalid_input():
+    with pytest.raises(AttributeError):
+        form = LoginForm()
+        form.button_style = 'invalid style'
+
+def test_login_form_button_style_boundary():
+    form = LoginForm()
+    assert form.button_style == 'background-color: #42b983; color: white; border: none; border-radius: 6px;'
+
+Test Execution Results:
+------------------------------
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-8.4.0, pluggy-1.6.0
+rootdir: E:\work_dsi\AI_Test_Automation_tool
+plugins: anyio-4.9.0
+collected 0 items / 1 error
+
+=================================== ERRORS ====================================
+_ ERROR collecting tests/vue_front_end_code_login-widget_src_components_LoginForm_test_cases.py _
+ImportError while importing test module 'E:\work_dsi\AI_Test_Automation_tool\tests\vue_front_end_code_login-widget_src_components_LoginForm_test_cases.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\NSH43\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\vue_front_end_code_login-widget_src_components_LoginForm_test_cases.py:2: in <module>
+    from scr.LoginForm import LoginForm
+E   ModuleNotFoundError: No module named 'scr.LoginForm'
+=========================== short test summary info ===========================
+ERROR tests/vue_front_end_code_login-widget_src_components_LoginForm_test_cases.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+============================== 1 error in 0.10s ===============================
+
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-19 12:59:22
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+# test_login_form.py
+import pytest
+from scr.login_widget import LoginWidget
+
+def test_login_form_happy_path():
+    login_form = LoginWidget()
+    assert login_form.login("valid_username", "valid_password") == "logged_in"
+
+def test_login_form_invalid_username():
+    login_form = LoginWidget()
+    assert login_form.login("invalid_username", "valid_password") == "invalid_username"
+
+def test_login_form_invalid_password():
+    login_form = LoginWidget()
+    assert login_form.login("valid_username", "invalid_password") == "invalid_password"
+
+============================================================
+Test Generation Log - 2025-06-19 14:59:53
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+# test_login_form.py
+import pytest
+from scr.login_widget import LoginWidget
+
+def test_login_form_happy_path():
+    login_form = LoginWidget()
+    assert login_form.login("valid_username", "valid_password") == "logged_in"
+
+def test_login_form_invalid_username():
+    login_form = LoginWidget()
+    assert login_form.login("invalid_username", "valid_password") == "invalid_username"
+
+def test_login_form_invalid_password():
+    login_form = LoginWidget()
+    assert login_form.login("valid_username", "invalid_password") == "invalid_password"
+
+Test Execution Results:
+------------------------------
+[WinError 2] The system cannot find the file specified
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-19 17:26:58
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+# test_login_form.py
+import pytest
+from scr.login_widget import LoginWidget
+
+def test_login_form_happy_path():
+    login_form = LoginWidget()
+    assert login_form.login("valid_username", "valid_password") == "logged_in"
+
+def test_login_form_invalid_username():
+    login_form = LoginWidget()
+    assert login_form.login("invalid_username", "valid_password") == "invalid_username"
+
+def test_login_form_invalid_password():
+    login_form = LoginWidget()
+    assert login_form.login("valid_username", "invalid_password") == "invalid_password"
+
+Test Execution Results:
+------------------------------
+[WinError 2] The system cannot find the file specified
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-19 17:38:56
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+# test_login_form.py
+import pytest
+from scr.login_widget import LoginWidget
+
+def test_login_form_happy_path():
+    login_form = LoginWidget()
+    assert login_form.login("valid_username", "valid_password") == "logged_in"
+
+def test_login_form_invalid_username():
+    login_form = LoginWidget()
+    assert login_form.login("invalid_username", "valid_password") == "invalid_username"
+
+def test_login_form_invalid_password():
+    login_form = LoginWidget()
+    assert login_form.login("valid_username", "invalid_password") == "invalid_password"
+
+Test Execution Results:
+------------------------------
+npm error code ENOENT
+npm error syscall open
+npm error path E:\work_dsi\AI_Test_Automation_tool\package.json
+npm error errno -4058
+npm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open 'E:\work_dsi\AI_Test_Automation_tool\package.json'
+npm error enoent This is related to npm not being able to find a file.
+npm error enoent
+npm error A complete log of this run can be found in: C:\Users\NSH43\AppData\Local\npm-cache\_logs\2025-06-19T12_08_56_439Z-debug-0.log
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-19 17:44:19
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+# test_login_form.py
+import pytest
+from scr.login_widget import LoginWidget
+
+def test_login_form_happy_path():
+    login_form = LoginWidget()
+    assert login_form.login("valid_username", "valid_password") == "logged_in"
+
+def test_login_form_invalid_username():
+    login_form = LoginWidget()
+    assert login_form.login("invalid_username", "valid_password") == "invalid_username"
+
+def test_login_form_invalid_password():
+    login_form = LoginWidget()
+    assert login_form.login("valid_username", "invalid_password") == "invalid_password"
+
+Test Execution Results:
+------------------------------
+npm error Missing script: "test:unit"
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+npm error A complete log of this run can be found in: C:\Users\NSH43\AppData\Local\npm-cache\_logs\2025-06-19T12_14_19_658Z-debug-0.log
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-19 18:02:54
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+# test_login_form.py
+import pytest
+from scr.login_widget import LoginWidget
+
+def test_login_form_happy_path():
+    login_form = LoginWidget()
+    assert login_form.login("valid_username", "valid_password") == "logged_in"
+
+def test_login_form_invalid_username():
+    login_form = LoginWidget()
+    assert login_form.login("invalid_username", "valid_password") == "invalid_username"
+
+def test_login_form_invalid_password():
+    login_form = LoginWidget()
+    assert login_form.login("valid_username", "invalid_password") == "invalid_password"
+
+Test Execution Results:
+------------------------------
+npm error Missing script: "test:unit"
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+npm error A complete log of this run can be found in: C:\Users\NSH43\AppData\Local\npm-cache\_logs\2025-06-19T12_32_54_836Z-debug-0.log
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-19 18:21:04
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+# test_login_form.py
+import pytest
+from scr.login_widget import LoginWidget
+
+def test_login_form_happy_path():
+    login_form = LoginWidget()
+    assert login_form.login("valid_username", "valid_password") == "logged_in"
+
+def test_login_form_invalid_username():
+    login_form = LoginWidget()
+    assert login_form.login("invalid_username", "valid_password") == "invalid_username"
+
+def test_login_form_invalid_password():
+    login_form = LoginWidget()
+    assert login_form.login("valid_username", "invalid_password") == "invalid_password"
+
+Test Execution Results:
+------------------------------
+npm error Missing script: "test:unit"
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+npm error A complete log of this run can be found in: C:\Users\NSH43\AppData\Local\npm-cache\_logs\2025-06-19T12_51_05_128Z-debug-0.log
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-19 19:05:38
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+# test_login_form.py
+import pytest
+from scr.login_widget import LoginWidget
+
+def test_login_form_happy_path():
+    login_form = LoginWidget()
+    assert login_form.login("valid_username", "valid_password") == "logged_in"
+
+def test_login_form_invalid_username():
+    login_form = LoginWidget()
+    assert login_form.login("invalid_username", "valid_password") == "invalid_username"
+
+def test_login_form_invalid_password():
+    login_form = LoginWidget()
+    assert login_form.login("valid_username", "invalid_password") == "invalid_password"
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+  1 file checked.
+  testMatch: **/__tests__/**/*.[jt]s?(x), **/?(*.)+(spec|test).[tj]s?(x) - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 1 match
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-19 19:14:17
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+# test_login_form.py
+import pytest
+from scr.login_widget import LoginWidget
+
+def test_login_form_happy_path():
+    login_form = LoginWidget()
+    assert login_form.login("valid_username", "valid_password") == "logged_in"
+
+def test_login_form_invalid_username():
+    login_form = LoginWidget()
+    assert login_form.login("invalid_username", "valid_password") == "invalid_username"
+
+def test_login_form_invalid_password():
+    login_form = LoginWidget()
+    assert login_form.login("valid_username", "invalid_password") == "invalid_password"
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+  1 file checked.
+  testMatch: **/__tests__/**/*.[jt]s?(x), **/?(*.)+(spec|test).[tj]s?(x) - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 1 match
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 10:53:13
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+  1 file checked.
+  testMatch: **/__tests__/**/*.[jt]s?(x), **/?(*.)+(spec|test).[tj]s?(x) - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 1 match
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 11:13:42
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+  1 file checked.
+  testMatch: **/__tests__/**/*.[jt]s?(x), **/?(*.)+(spec|test).[tj]s?(x) - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 1 match
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 11:15:52
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+❌ Error running Vue tests: [WinError 267] The directory name is invalid
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 11:29:47
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+❌ Error running Vue tests: [WinError 267] The directory name is invalid
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 11:38:25
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+❌ Error running Vue tests: [WinError 267] The directory name is invalid
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 11:41:42
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+❌ Error running Vue tests: [WinError 267] The directory name is invalid
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 11:43:03
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+❌ Error running Vue tests: [WinError 267] The directory name is invalid
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 11:48:32
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+❌ Error running Vue tests: [WinError 2] The system cannot find the file specified
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 11:50:14
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+❌ Error running Vue tests: [WinError 2] The system cannot find the file specified
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 11:51:37
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+❌ Cannot find package.json in ./vue_front_end_code\login-widget\tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js\vue_front_end_code\login-widget
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 12:12:44
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+  1 file checked.
+  testMatch: **/tests/unit/**/*.spec.[jt]s?(x) - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 1 match
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 12:13:15
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+  1 file checked.
+  testMatch: **/tests/unit/**/*.spec.[jt]s?(x) - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 1 match
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 12:59:14
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+  1 file checked.
+  testMatch: **/tests/unit/**/*.spec.[jt]s?(x) - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 1 match
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 13:19:33
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+  1 file checked.
+  testMatch: **/tests/unit/**/*.spec.[jt]s?(x) - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 1 match
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 15:23:33
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+  1 file checked.
+  testMatch: **/tests/unit/**/*.spec.[jt]s?(x) - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 1 match
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 15:25:51
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+  1 file checked.
+  testMatch: **/tests/unit/**/*.spec.[jt]s?(x) - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 1 match
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 15:29:11
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+  1 file checked.
+  testMatch: **/tests/unit/**/*.spec.[jt]s?(x) - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 1 match
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 17:14:06
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+  1 file checked.
+  testMatch: **/tests/unit/**/*.spec.[jt]s?(x) - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 1 match
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 17:21:07
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+  1 file checked.
+  testMatch: **/tests/unit/**/*.spec.[jt]s?(x) - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 1 match
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 17:27:48
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+  1 file checked.
+  testMatch: **/tests/unit/**/*.spec.[jt]s?(x) - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 1 match
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 17:37:55
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+  1 file checked.
+  testMatch: **/tests/unit/**/*.spec.[jt]s?(x) - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 1 match
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 17:40:42
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+  1 file checked.
+  testMatch: **/tests/unit/**/*.spec.[jt]s?(x) - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 1 match
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 17:42:31
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+  1 file checked.
+  testMatch: **/tests/unit/**/*.spec.js - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 1 match
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-20 17:45:40
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+  1 file checked.
+  testMatch: **/tests/unit/**/*.spec.js - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 1 match
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-23 14:50:20
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+  1 file checked.
+  testMatch: **/tests/unit/**/*.spec.js - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 1 match
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-23 14:58:26
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+  1 file checked.
+  testMatch: **/tests/unit/**/*.spec.js - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 1 match
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-23 15:02:25
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+  1 file checked.
+  testMatch: E:/work_dsi/AI_Test_Automation_tool/vue_front_end_code/login-widget/tests/unit/components/LoginForm.spec.js - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 1 match
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-23 15:55:27
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+None
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-23 17:26:02
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+● Validation Error:
+
+  Module vue-jest in the transform option was not found.
+         <rootDir> is: E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-24 11:06:45
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+FAIL tests/unit/vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+  ● Test suite failed to run
+
+    ReferenceError: Vue is not defined
+
+    [0m [90m 1 |[39m script
+     [90m 2 |[39m [90m// LoginForm.test.js[39m
+    [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { mount } [36mfrom[39m [32m'@vue/test-utils'[39m[33m;[39m
+     [90m   |[39m [31m[1m^[22m[39m
+     [90m 4 |[39m [36mimport[39m [33mLoginForm[39m [36mfrom[39m [32m'@/components/LoginForm.vue'[39m[33m;[39m
+     [90m 5 |[39m
+     [90m 6 |[39m describe([32m'LoginForm'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.<anonymous> (node_modules/@vue/test-utils/dist/vue-test-utils.browser.js:8433:8)
+      at Object.require (tests/unit/vue_front_end_code_login-widget_src_components_LoginForm.spec.js:3:1)
+
+FAIL tests/unit/components/vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+  ● Test suite failed to run
+
+    ReferenceError: Vue is not defined
+
+    [0m [90m 1 |[39m script
+     [90m 2 |[39m [90m// LoginForm.test.js[39m
+    [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { mount } [36mfrom[39m [32m'@vue/test-utils'[39m[33m;[39m
+     [90m   |[39m [31m[1m^[22m[39m
+     [90m 4 |[39m [36mimport[39m [33mLoginForm[39m [36mfrom[39m [32m'@/components/LoginForm.vue'[39m[33m;[39m
+     [90m 5 |[39m
+     [90m 6 |[39m describe([32m'LoginForm'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.<anonymous> (node_modules/@vue/test-utils/dist/vue-test-utils.browser.js:8433:8)
+      at Object.require (tests/unit/components/vue_front_end_code_login-widget_src_components_LoginForm.spec.js:3:1)
+
+FAIL tests/unit/components/LoginForm.spec.js
+  ● Test suite failed to run
+
+    ReferenceError: Vue is not defined
+
+    [0m [90m 1 |[39m script
+     [90m 2 |[39m [90m// LoginForm.test.js[39m
+    [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { mount } [36mfrom[39m [32m'@vue/test-utils'[39m[33m;[39m
+     [90m   |[39m [31m[1m^[22m[39m
+     [90m 4 |[39m [36mimport[39m [33mLoginForm[39m [36mfrom[39m [32m'@/components/LoginForm.vue'[39m[33m;[39m
+     [90m 5 |[39m
+     [90m 6 |[39m describe([32m'LoginForm'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.<anonymous> (node_modules/@vue/test-utils/dist/vue-test-utils.browser.js:8433:8)
+      at Object.require (tests/unit/components/LoginForm.spec.js:3:1)
+
+Test Suites: 3 failed, 3 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        2.824 s
+Ran all test suites.
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-24 14:40:19
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+============================================================
+Test Generation Log - 2025-06-24 14:53:29
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+# test_login_form.py
+from scr.test_base import TestBase
+from unittest.mock import Mock
+
+class TestLoginForm(TestBase):
+    def test_login_form_happy_path(self):
+        with self.assertRaises(Exception):
+            self.app.component('LoginForm').setup()
+
+    def test_login_form_invalid_email(self):
+        with self.assertRaises(Exception):
+            self.app.component('LoginForm').setup(email='invalid_email')
+
+    def test_login_form_invalid_password(self):
+        with self.assertRaises(Exception):
+            self.app.component('LoginForm').setup(password='invalid_password')
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+FAIL tests/unit/components/vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+  ● Test suite failed to run
+
+    ReferenceError: Vue is not defined
+
+    [0m [90m 1 |[39m script
+     [90m 2 |[39m [90m// LoginForm.test.js[39m
+    [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { mount } [36mfrom[39m [32m'@vue/test-utils'[39m[33m;[39m
+     [90m   |[39m [31m[1m^[22m[39m
+     [90m 4 |[39m [36mimport[39m [33mLoginForm[39m [36mfrom[39m [32m'@/components/LoginForm.vue'[39m[33m;[39m
+     [90m 5 |[39m
+     [90m 6 |[39m describe([32m'LoginForm'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.<anonymous> (node_modules/@vue/test-utils/dist/vue-test-utils.browser.js:8433:8)
+      at Object.require (tests/unit/components/vue_front_end_code_login-widget_src_components_LoginForm.spec.js:3:1)
+
+FAIL tests/unit/vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+  ● Test suite failed to run
+
+    ReferenceError: Vue is not defined
+
+    [0m [90m 1 |[39m script
+     [90m 2 |[39m [90m// LoginForm.test.js[39m
+    [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { mount } [36mfrom[39m [32m'@vue/test-utils'[39m[33m;[39m
+     [90m   |[39m [31m[1m^[22m[39m
+     [90m 4 |[39m [36mimport[39m [33mLoginForm[39m [36mfrom[39m [32m'@/components/LoginForm.vue'[39m[33m;[39m
+     [90m 5 |[39m
+     [90m 6 |[39m describe([32m'LoginForm'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.<anonymous> (node_modules/@vue/test-utils/dist/vue-test-utils.browser.js:8433:8)
+      at Object.require (tests/unit/vue_front_end_code_login-widget_src_components_LoginForm.spec.js:3:1)
+
+FAIL tests/unit/components/LoginForm.spec.js
+  ● Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    SyntaxError: E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js: Unexpected token (1:0)
+
+    [0m[31m[1m>[22m[39m[90m 1 |[39m [33m#[39m test_login_form[33m.[39mpy
+     [90m   |[39m [31m[1m^[22m[39m
+     [90m 2 |[39m [36mfrom[39m scr[33m.[39mtest_base [36mimport[39m [33mTestBase[39m
+     [90m 3 |[39m [36mfrom[39m unittest[33m.[39mmock [36mimport[39m [33mMock[39m
+     [90m 4 |[39m[0m
+
+      at constructor (node_modules/@babel/parser/src/parse-error.ts:95:45)
+      at JSXParserMixin.toParseError [as raise] (node_modules/@babel/parser/src/tokenizer/index.ts:1503:19)
+      at JSXParserMixin.raise [as unexpected] (node_modules/@babel/parser/src/tokenizer/index.ts:1543:16)
+      at JSXParserMixin.unexpected (node_modules/@babel/parser/src/parser/expression.ts:1245:14)
+      at JSXParserMixin.parseExprAtom (node_modules/@babel/parser/src/plugins/jsx/index.ts:583:22)
+      at JSXParserMixin.parseExprAtom [as parseExprSubscripts] (node_modules/@babel/parser/src/parser/expression.ts:728:23)
+      at JSXParserMixin.parseExprSubscripts [as parseUpdate] (node_modules/@babel/parser/src/parser/expression.ts:707:21)
+      at JSXParserMixin.parseUpdate [as parseMaybeUnary] (node_modules/@babel/parser/src/parser/expression.ts:669:23)
+      at JSXParserMixin.parseMaybeUnary [as parseMaybeUnaryOrPrivate] (node_modules/@babel/parser/src/parser/expression.ts:403:14)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate [as parseExprOps] (node_modules/@babel/parser/src/parser/expression.ts:415:23)
+      at JSXParserMixin.parseExprOps [as parseMaybeConditional] (node_modules/@babel/parser/src/parser/expression.ts:370:23)
+      at JSXParserMixin.parseMaybeConditional [as parseMaybeAssign] (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at JSXParserMixin.parseMaybeAssign [as parseExpressionBase] (node_modules/@babel/parser/src/parser/expression.ts:226:23)
+      at parseExpressionBase (node_modules/@babel/parser/src/parser/expression.ts:217:39)
+      at JSXParserMixin.callback [as allowInAnd] (node_modules/@babel/parser/src/parser/expression.ts:3144:16)
+      at JSXParserMixin.allowInAnd [as parseExpression] (node_modules/@babel/parser/src/parser/expression.ts:217:17)
+      at JSXParserMixin.parseExpression [as parseStatementContent] (node_modules/@babel/parser/src/parser/statement.ts:675:23)
+      at JSXParserMixin.parseStatementContent [as parseStatementLike] (node_modules/@babel/parser/src/parser/statement.ts:468:17)
+      at JSXParserMixin.parseStatementLike [as parseModuleItem] (node_modules/@babel/parser/src/parser/statement.ts:405:17)
+      at JSXParserMixin.parseModuleItem [as parseBlockOrModuleBlockBody] (node_modules/@babel/parser/src/parser/statement.ts:1434:16)
+      at JSXParserMixin.parseBlockOrModuleBlockBody [as parseBlockBody] (node_modules/@babel/parser/src/parser/statement.ts:1408:10)
+      at JSXParserMixin.parseBlockBody [as parseProgram] (node_modules/@babel/parser/src/parser/statement.ts:225:10)
+      at JSXParserMixin.parseProgram [as parseTopLevel] (node_modules/@babel/parser/src/parser/statement.ts:203:25)
+      at JSXParserMixin.parseTopLevel [as parse] (node_modules/@babel/parser/src/parser/index.ts:93:10)
+      at parse (node_modules/@babel/parser/src/index.ts:54:26)
+      at parser (node_modules/@babel/core/src/parser/index.ts:28:19)
+          at parser.next (<anonymous>)
+      at normalizeFile (node_modules/@babel/core/src/transformation/normalize-file.ts:49:24)
+          at normalizeFile.next (<anonymous>)
+      at run (node_modules/@babel/core/src/transformation/index.ts:40:36)
+          at run.next (<anonymous>)
+      at transform (node_modules/@babel/core/src/transform.ts:29:20)
+          at transform.next (<anonymous>)
+      at evaluateSync (node_modules/gensync/index.js:251:28)
+      at sync (node_modules/gensync/index.js:89:14)
+      at fn (node_modules/@babel/core/src/errors/rewrite-stack-trace.ts:99:14)
+      at transformSync (node_modules/@babel/core/src/transform.ts:66:52)
+      at ScriptTransformer.transformSource (node_modules/@jest/transform/build/ScriptTransformer.js:545:31)
+      at ScriptTransformer._transformAndBuildScript (node_modules/@jest/transform/build/ScriptTransformer.js:674:40)
+      at ScriptTransformer.transform (node_modules/@jest/transform/build/ScriptTransformer.js:726:19)
+
+Test Suites: 3 failed, 3 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        2.264 s
+Ran all test suites.
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-24 15:00:29
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+# test_login_form.py
+from scr.test_base import TestBase
+from scr.login_form import LoginForm
+
+class TestLoginForm(TestBase):
+    def test_login_form_happy_path(self):
+        self.assertTrue(self.login_form.is_valid())
+
+    def test_login_form_invalid_username(self):
+        self.login_form.username = "invalid"
+        self.assertFalse(self.login_form.is_valid())
+
+    def test_login_form_invalid_password(self):
+        self.login_form.password = "invalid"
+        self.assertFalse(self.login_form.is_valid())
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+FAIL tests/unit/components/vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+  ● Test suite failed to run
+
+    ReferenceError: Vue is not defined
+
+    [0m [90m 1 |[39m script
+     [90m 2 |[39m [90m// LoginForm.test.js[39m
+    [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { mount } [36mfrom[39m [32m'@vue/test-utils'[39m[33m;[39m
+     [90m   |[39m [31m[1m^[22m[39m
+     [90m 4 |[39m [36mimport[39m [33mLoginForm[39m [36mfrom[39m [32m'@/components/LoginForm.vue'[39m[33m;[39m
+     [90m 5 |[39m
+     [90m 6 |[39m describe([32m'LoginForm'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.<anonymous> (node_modules/@vue/test-utils/dist/vue-test-utils.browser.js:8433:8)
+      at Object.require (tests/unit/components/vue_front_end_code_login-widget_src_components_LoginForm.spec.js:3:1)
+
+FAIL tests/unit/vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+  ● Test suite failed to run
+
+    ReferenceError: Vue is not defined
+
+    [0m [90m 1 |[39m script
+     [90m 2 |[39m [90m// LoginForm.test.js[39m
+    [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { mount } [36mfrom[39m [32m'@vue/test-utils'[39m[33m;[39m
+     [90m   |[39m [31m[1m^[22m[39m
+     [90m 4 |[39m [36mimport[39m [33mLoginForm[39m [36mfrom[39m [32m'@/components/LoginForm.vue'[39m[33m;[39m
+     [90m 5 |[39m
+     [90m 6 |[39m describe([32m'LoginForm'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.<anonymous> (node_modules/@vue/test-utils/dist/vue-test-utils.browser.js:8433:8)
+      at Object.require (tests/unit/vue_front_end_code_login-widget_src_components_LoginForm.spec.js:3:1)
+
+FAIL tests/unit/components/LoginForm.spec.js
+  ● Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    SyntaxError: E:\work_dsi\AI_Test_Automation_tool\vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js: Unexpected token (1:0)
+
+    [0m[31m[1m>[22m[39m[90m 1 |[39m [33m#[39m test_login_form[33m.[39mpy
+     [90m   |[39m [31m[1m^[22m[39m
+     [90m 2 |[39m [36mfrom[39m scr[33m.[39mtest_base [36mimport[39m [33mTestBase[39m
+     [90m 3 |[39m [36mfrom[39m scr[33m.[39mlogin_form [36mimport[39m [33mLoginForm[39m
+     [90m 4 |[39m[0m
+
+      at constructor (node_modules/@babel/parser/src/parse-error.ts:95:45)
+      at JSXParserMixin.toParseError [as raise] (node_modules/@babel/parser/src/tokenizer/index.ts:1503:19)
+      at JSXParserMixin.raise [as unexpected] (node_modules/@babel/parser/src/tokenizer/index.ts:1543:16)
+      at JSXParserMixin.unexpected (node_modules/@babel/parser/src/parser/expression.ts:1245:14)
+      at JSXParserMixin.parseExprAtom (node_modules/@babel/parser/src/plugins/jsx/index.ts:583:22)
+      at JSXParserMixin.parseExprAtom [as parseExprSubscripts] (node_modules/@babel/parser/src/parser/expression.ts:728:23)
+      at JSXParserMixin.parseExprSubscripts [as parseUpdate] (node_modules/@babel/parser/src/parser/expression.ts:707:21)
+      at JSXParserMixin.parseUpdate [as parseMaybeUnary] (node_modules/@babel/parser/src/parser/expression.ts:669:23)
+      at JSXParserMixin.parseMaybeUnary [as parseMaybeUnaryOrPrivate] (node_modules/@babel/parser/src/parser/expression.ts:403:14)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate [as parseExprOps] (node_modules/@babel/parser/src/parser/expression.ts:415:23)
+      at JSXParserMixin.parseExprOps [as parseMaybeConditional] (node_modules/@babel/parser/src/parser/expression.ts:370:23)
+      at JSXParserMixin.parseMaybeConditional [as parseMaybeAssign] (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at JSXParserMixin.parseMaybeAssign [as parseExpressionBase] (node_modules/@babel/parser/src/parser/expression.ts:226:23)
+      at parseExpressionBase (node_modules/@babel/parser/src/parser/expression.ts:217:39)
+      at JSXParserMixin.callback [as allowInAnd] (node_modules/@babel/parser/src/parser/expression.ts:3144:16)
+      at JSXParserMixin.allowInAnd [as parseExpression] (node_modules/@babel/parser/src/parser/expression.ts:217:17)
+      at JSXParserMixin.parseExpression [as parseStatementContent] (node_modules/@babel/parser/src/parser/statement.ts:675:23)
+      at JSXParserMixin.parseStatementContent [as parseStatementLike] (node_modules/@babel/parser/src/parser/statement.ts:468:17)
+      at JSXParserMixin.parseStatementLike [as parseModuleItem] (node_modules/@babel/parser/src/parser/statement.ts:405:17)
+      at JSXParserMixin.parseModuleItem [as parseBlockOrModuleBlockBody] (node_modules/@babel/parser/src/parser/statement.ts:1434:16)
+      at JSXParserMixin.parseBlockOrModuleBlockBody [as parseBlockBody] (node_modules/@babel/parser/src/parser/statement.ts:1408:10)
+      at JSXParserMixin.parseBlockBody [as parseProgram] (node_modules/@babel/parser/src/parser/statement.ts:225:10)
+      at JSXParserMixin.parseProgram [as parseTopLevel] (node_modules/@babel/parser/src/parser/statement.ts:203:25)
+      at JSXParserMixin.parseTopLevel [as parse] (node_modules/@babel/parser/src/parser/index.ts:93:10)
+      at parse (node_modules/@babel/parser/src/index.ts:54:26)
+      at parser (node_modules/@babel/core/src/parser/index.ts:28:19)
+          at parser.next (<anonymous>)
+      at normalizeFile (node_modules/@babel/core/src/transformation/normalize-file.ts:49:24)
+          at normalizeFile.next (<anonymous>)
+      at run (node_modules/@babel/core/src/transformation/index.ts:40:36)
+          at run.next (<anonymous>)
+      at transform (node_modules/@babel/core/src/transform.ts:29:20)
+          at transform.next (<anonymous>)
+      at evaluateSync (node_modules/gensync/index.js:251:28)
+      at sync (node_modules/gensync/index.js:89:14)
+      at fn (node_modules/@babel/core/src/errors/rewrite-stack-trace.ts:99:14)
+      at transformSync (node_modules/@babel/core/src/transform.ts:66:52)
+      at ScriptTransformer.transformSource (node_modules/@jest/transform/build/ScriptTransformer.js:545:31)
+      at ScriptTransformer._transformAndBuildScript (node_modules/@jest/transform/build/ScriptTransformer.js:674:40)
+      at ScriptTransformer.transform (node_modules/@jest/transform/build/ScriptTransformer.js:726:19)
+
+Test Suites: 3 failed, 3 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        2.259 s
+Ran all test suites.
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-24 15:19:26
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+FAIL tests/unit/vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+  ● Test suite failed to run
+
+    ReferenceError: Vue is not defined
+
+    [0m [90m 1 |[39m script
+     [90m 2 |[39m [90m// LoginForm.test.js[39m
+    [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { mount } [36mfrom[39m [32m'@vue/test-utils'[39m[33m;[39m
+     [90m   |[39m [31m[1m^[22m[39m
+     [90m 4 |[39m [36mimport[39m [33mLoginForm[39m [36mfrom[39m [32m'@/components/LoginForm.vue'[39m[33m;[39m
+     [90m 5 |[39m
+     [90m 6 |[39m describe([32m'LoginForm'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.<anonymous> (node_modules/@vue/test-utils/dist/vue-test-utils.browser.js:8433:8)
+      at Object.require (tests/unit/vue_front_end_code_login-widget_src_components_LoginForm.spec.js:3:1)
+
+FAIL tests/unit/components/vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+  ● Test suite failed to run
+
+    ReferenceError: Vue is not defined
+
+    [0m [90m 1 |[39m script
+     [90m 2 |[39m [90m// LoginForm.test.js[39m
+    [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { mount } [36mfrom[39m [32m'@vue/test-utils'[39m[33m;[39m
+     [90m   |[39m [31m[1m^[22m[39m
+     [90m 4 |[39m [36mimport[39m [33mLoginForm[39m [36mfrom[39m [32m'@/components/LoginForm.vue'[39m[33m;[39m
+     [90m 5 |[39m
+     [90m 6 |[39m describe([32m'LoginForm'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.<anonymous> (node_modules/@vue/test-utils/dist/vue-test-utils.browser.js:8433:8)
+      at Object.require (tests/unit/components/vue_front_end_code_login-widget_src_components_LoginForm.spec.js:3:1)
+
+FAIL tests/unit/components/LoginForm.spec.js
+  ● Test suite failed to run
+
+    ReferenceError: Vue is not defined
+
+    [0m [90m 1 |[39m script
+     [90m 2 |[39m [90m// LoginForm.test.js[39m
+    [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { mount } [36mfrom[39m [32m'@vue/test-utils'[39m[33m;[39m
+     [90m   |[39m [31m[1m^[22m[39m
+     [90m 4 |[39m [36mimport[39m [33mLoginForm[39m [36mfrom[39m [32m'@/components/LoginForm.vue'[39m[33m;[39m
+     [90m 5 |[39m
+     [90m 6 |[39m describe([32m'LoginForm'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.<anonymous> (node_modules/@vue/test-utils/dist/vue-test-utils.browser.js:8433:8)
+      at Object.require (tests/unit/components/LoginForm.spec.js:3:1)
+
+Test Suites: 3 failed, 3 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        3.385 s
+Ran all test suites.
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-25 10:49:24
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+Test Execution Results:
+------------------------------
+
+> login-widget@0.1.0 test:unit
+> jest
+
+FAIL tests/unit/components/vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+  ● Test suite failed to run
+
+    ReferenceError: Vue is not defined
+
+    [0m [90m 1 |[39m script
+     [90m 2 |[39m [90m// LoginForm.test.js[39m
+    [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { mount } [36mfrom[39m [32m'@vue/test-utils'[39m[33m;[39m
+     [90m   |[39m [31m[1m^[22m[39m
+     [90m 4 |[39m [36mimport[39m [33mLoginForm[39m [36mfrom[39m [32m'@/components/LoginForm.vue'[39m[33m;[39m
+     [90m 5 |[39m
+     [90m 6 |[39m describe([32m'LoginForm'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.<anonymous> (node_modules/@vue/test-utils/dist/vue-test-utils.browser.js:8433:8)
+      at Object.require (tests/unit/components/vue_front_end_code_login-widget_src_components_LoginForm.spec.js:3:1)
+
+FAIL tests/unit/vue_front_end_code_login-widget_src_components_LoginForm.spec.js
+  ● Test suite failed to run
+
+    ReferenceError: Vue is not defined
+
+    [0m [90m 1 |[39m script
+     [90m 2 |[39m [90m// LoginForm.test.js[39m
+    [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { mount } [36mfrom[39m [32m'@vue/test-utils'[39m[33m;[39m
+     [90m   |[39m [31m[1m^[22m[39m
+     [90m 4 |[39m [36mimport[39m [33mLoginForm[39m [36mfrom[39m [32m'@/components/LoginForm.vue'[39m[33m;[39m
+     [90m 5 |[39m
+     [90m 6 |[39m describe([32m'LoginForm'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.<anonymous> (node_modules/@vue/test-utils/dist/vue-test-utils.browser.js:8433:8)
+      at Object.require (tests/unit/vue_front_end_code_login-widget_src_components_LoginForm.spec.js:3:1)
+
+FAIL tests/unit/components/LoginForm.spec.js
+  ● Test suite failed to run
+
+    ReferenceError: Vue is not defined
+
+    [0m [90m 1 |[39m script
+     [90m 2 |[39m [90m// LoginForm.test.js[39m
+    [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { mount } [36mfrom[39m [32m'@vue/test-utils'[39m[33m;[39m
+     [90m   |[39m [31m[1m^[22m[39m
+     [90m 4 |[39m [36mimport[39m [33mLoginForm[39m [36mfrom[39m [32m'@/components/LoginForm.vue'[39m[33m;[39m
+     [90m 5 |[39m
+     [90m 6 |[39m describe([32m'LoginForm'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.<anonymous> (node_modules/@vue/test-utils/dist/vue-test-utils.browser.js:8433:8)
+      at Object.require (tests/unit/components/LoginForm.spec.js:3:1)
+
+Test Suites: 3 failed, 3 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        4.848 s
+Ran all test suites.
+
+============================================================
+
+============================================================
+Test Generation Log - 2025-06-25 18:14:41
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+============================================================
+Test Generation Log - 2025-06-27 10:48:44
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..9069627 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 6px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});
+
+============================================================
+Test Generation Log - 2025-07-02 17:45:00
+============================================================
+Original File: vue_front_end_code/login-widget/src/components/LoginForm.vue
+Test File Created: LoginForm.spec.js
+Test File Path: ./vue_front_end_code\login-widget\tests\unit\components\LoginForm.spec.js
+
+Code Diff:
+------------------------------
+diff --git a/vue_front_end_code/login-widget/src/components/LoginForm.vue b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+index 717e5c1..ca48a0f 100644
+--- a/vue_front_end_code/login-widget/src/components/LoginForm.vue
++++ b/vue_front_end_code/login-widget/src/components/LoginForm.vue
+@@ -53,6 +53,6 @@ button {
+   background-color: #42b983;
+   color: white;
+   border: none;
+-  border-radius: 4px;
++  border-radius: 3px;
+ }
+ </style>
+
+Generated Test Cases:
+------------------------------
+script
+// LoginForm.test.js
+import { mount } from '@vue/test-utils';
+import LoginForm from '@/components/LoginForm.vue';
+
+describe('LoginForm', () => {
+  it('renders correctly', () => {
+    const wrapper = mount(LoginForm);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  it('validates valid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(true);
+  });
+
+  it('validates invalid input', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty username', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('');
+    wrapper.find('input[name="password"]').setValue('test');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+
+  it('handles empty password', () => {
+    const wrapper = mount(LoginForm);
+    wrapper.find('input[name="username"]').setValue('test');
+    wrapper.find('input[name="password"]').setValue('');
+    wrapper.find('button[type="submit"]').trigger('click');
+    expect(wrapper.vm.submit()).toBe(false);
+  });
+});

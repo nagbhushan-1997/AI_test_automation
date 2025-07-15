@@ -1,0 +1,5 @@
+streamlit
+GitPython
+llama-cpp-python
+pytest
+ollama

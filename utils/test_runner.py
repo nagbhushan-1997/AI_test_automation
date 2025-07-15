@@ -9,7 +9,7 @@ import subprocess
 
 def run_tests(path):
     result = subprocess.run(
-        ["pytest", path],
+        ["jest", path],
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE
     )
