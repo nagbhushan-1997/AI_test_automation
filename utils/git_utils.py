@@ -32,8 +32,8 @@ def get_changed_files(repo_path):
         
         and f.endswith(".vue")
         and f.startswith("vue_front_end_code/login-widget/src/components/")
-        # and not f.startswith("vue_front_end_code/tests/unit/")
-        # and not f.startswith("vue_front_end_code/login-widget/saved_logs/")
+        and not f.startswith("vue_front_end_code/tests/unit/")
+        and not f.startswith("vue_front_end_code/login-widget/saved_logs/")
         
     ]
 

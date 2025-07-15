@@ -48,7 +48,7 @@ export default {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: black;
+  background-color: burlywood;
 }
 .login-box {
   width: 300px;
@@ -71,7 +71,7 @@ input {
 }
 button {
   padding: 10px;
-  background-color: green;
+  background-color:green;
   color: white;
   border: none;
   border-radius: 4px;
